@@ -3,4 +3,4 @@ RUN               mkdir /app
 WORKDIR           /app
 COPY              ./ /app/
 RUN               pip3.6 install -r requirements.txt
-ENTRYPOINT        ["uwsgi --ini", "payment.ini"]
+ENTRYPOINT        ["bash", "run.sh"]
